@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.ladoesquerdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.ladodireito {
+    display: flex;
+    margin-right: 20px;
+}
+
+.fa-pizza-slice {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.fa-pizza-slice:hover {
+    transform: rotate(360deg);
+    transition: 0.6s;
+}
+
+.menu-icon {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item {
+    display: flex;
+    padding: 8px;
+    margin-right: 16px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item:hover {
+    background: #d60000;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .menu-icon {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        left: -150%;
+        height: 90vh;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+      .nav-link {
+        height: 50px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+      }
+}

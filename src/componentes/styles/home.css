@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    background-image: url('/src/assets/pizza-home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .home .title {
+    margin-left: 8px;
+  }
+  
+  .social-media {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.8em;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+  }
+  
+  .social-media:hover {
+    transform: translateY(-10px);
+  }
+  .social-media::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(90px);
+    transition: 0.7s;
+  }
+  .social-media:hover::before {
+    transform: skewX(45deg) translateX(-90px);
+  }
+  
+  .social-media a {
+    color: white;
+    font-size: 25px;
+  }
