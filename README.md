@@ -6,7 +6,7 @@
 
 - projeto feito para aplicar meus conhecimentos em react.
 
-- o site procura ser simples e mostrar algumas opcoes de pizza de uma pizzaria (ficticia), onde  o usuario possa ver todas as opcoes disponivel. a pagina deve ser ajustar em todos os padroes de tela.
+- o site procura ser simples e mostrar algumas opcoes de pizza de uma pizzaria (ficticia), onde  o usuario possa ver todas as opcoes disponiveis. a pagina deve ser ajustar em todos os padroes de tela.
 
 - o usuario pode navegar entre as paginas aprentadas.
 
